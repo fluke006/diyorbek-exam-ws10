@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/main.min.css"> 
+   <title>Document</title>
+</head>
+<body>
+
+   <!--======================== HEADER ========================-->
+   
+   <header class="header">
+      <div class="container">
+         <a class="header__logo-link"  href="./home.html"> 
+            <img  class="header__logo-link__image" src="./images/logo.svg" alt="logo" width="60" height="32">
+         </a>
+
+         <button class="header__hamburgerbtn" type="button">
+            <img class="hamburgerbtn-menu" src="./images/hamburger-menu.svg" alt="hamburger-menu" width="24" height="13">
+
+            <img class="hamburgerbtn__exit" src="./images/hamburger-exit.svg" alt="hamburger-menu" width="24" height="13">
+         </button>
+
+         <nav class="header__nav">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a class="nav__link nav__link--color" href="./home.html">HOME</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#">PORTFOLIO</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#">CONTACT ME</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <!--============================= MAIN =============================-->
+
+   <main class="main">
+      <section class="hero">
+         <div class="hero__inner">
+            <div class="container">
+               <div class="hero__box">
+                  <h1 class="hero__heading">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+   
+                  <a class="hero__link" href="#aboutme">ABOUT ME</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="about" id="aboutme">
+         <div class="container">
+            <picture class="about__picture">
+
+               <!-- WebP -->
+
+               <source
+               type="image/webp"
+               media="(max-width:650px)"
+               srcset="
+               ./images/man-mob.webp 1x ,
+               ./images/man-mob@2x.webp 2x
+               "
+             />
+
+              <source
+              type="image/webp"
+              media="(max-width:780px)"
+              srcset="
+              ./images/man-tab.wepb 1x ,
+              ./images/man-tab@2x.webp 2x
+              "
+             /> 
+
+             <source
+             type="image/webp"
+             srcset="
+               ./images/man.webp 1x ,
+               ./images/man@2x.webp 2x
+               " 
+
+             >
+
+               <!-- JPG -->
+
+               <source
+                 media="(max-width:650px)"
+                 srcset="
+                 ./images/man-mob.jpg 1x ,
+                 ./images/man-mob@2x.jpg 2x
+                 "
+               />
+
+               <source
+               media="(max-width:780px)"
+               srcset="
+               ./images/man-tab.jpg 1x ,
+               ./images/man-tab@2x.jpg 2x
+               "
+             />
+
+               <img class="about__image" 
+               src="./images/man.jpg"
+               srcset="
+               ./images/man.jpg 1x ,
+               ./images/man@2x.jpg 2x
+               " 
+               alt="image me" 
+               width="540" 
+               height="600"
+               >
+
+            </picture>
+
+            <div class="about__box">
+
+               <hr>
+
+               <h2 class="about__heading">About Me</h2>
+
+               <p class="about__info">
+                  I’m a junior front-end developer looking for a new role in an exciting company. 
+                  I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript.
+                   When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. 
+                   I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. 
+                   When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, 
+                   run or cycling. I’d love you to check out my work.
+               </p>
+               
+   
+               <a class="about__link" href="#">GO TO PORTFOLIO</a>
+
+               <hr>
+   
+            </div>
+
+         </div>
+      </section>
+
+      <section class="contact">
+         <div class="container">
+
+            <h2 class="contact__heading">Interested in doing a project together?</h2>
+
+            <hr class="contact__line"/>
+
+            <a class="contact__link" href="#">CONTACT ME</a>
+
+         </div>
+      </section>
+   </main>
+
+    <!--========================= FOOTER =========================-->
+
+    <footer class="footer">
+      <div class="container">
+         <a  class="header__logo-link  header__logo-link--footer--color" href="./home.html\">
+            <svg
+                 width="61" 
+                 height="32" 
+                 fill="currentColor" 
+                 xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" clip-rule="evenodd" 
+                 d="M31.347 26.122L15.673 0 0 26.122h31.347zM60.082 5.878L44.408 32 28.735 5.878h31.347z" 
+                 fill="currentColor"/>
+               </svg>
+         </a>
+
+         <nav class="footer__nav">
+            <ul class="footer__nav__list">
+               <li class="footer__nav__item">
+                  <a class="footer__nav__link" href="./home.html">HOME</a>
+               </li>
+               <li class="footer__nav__item">
+                  <a class="footer__nav__link" href="#">PORTFOLIO</a>
+               </li>
+               <li class="footer__nav__item">
+                  <a class="footer__nav__link" href="#">CONTACT ME</a>
+               </li>
+            </ul>
+         </nav>
+
+         <ul class="footer__list">
+            <li class="footer__item">
+               <a class="footer__link" href="https://github.com/" target="_blank">
+                  <img class="link__img" src="./images/Path.svg" alt="github" width="24" height="25">
+               </a>
+            </li>
+
+            <li class="footer__item">
+               <a class="footer__link" href="https://twitter.com" target="_blank">
+                  <img class="link__img" src="./images/Path2.svg" alt="twitter" width="24" height="25">
+               </a>
+            </li>
+
+            <li class="footer__item">
+               <a class="footer__link" href="https://www.linkedin.com/" target="_blank">
+                  <img class="link__img" src="./images/Shape.svg" alt="linkedin" width="24" height="25">
+               </a>
+            </li>
+            
+         </ul>
+      </div>
+    </footer>
+
+   <script src="./js/main.js"></script>
+   
+</body>
+</html>
